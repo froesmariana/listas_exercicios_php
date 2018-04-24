@@ -2,20 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Questão 01</title>
     </head>
     <body>
-        <fieldset>
-            <form method="post" action="#">
-                <label for="pre_">Preço:</label>
-                <input id="pre_" name="pre" type="number"/>
-            </form>
-        </fieldset>
         <?php
-            $pre = $_POST['pre'];
-            
-            $nPre = ($pre * 0.09) - $pre;
-            echo 'Novo preço com desconto de 9%: '.$nPre;
+           $v1 = 10;
+           $v2 = 20.3;
+           
+           echo 'O valor inteiro é: '.$v1;
+           echo '</br>O valor real é: '.$v2;
         ?>
     </body>
 </html>

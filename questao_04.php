@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Questão 4</title>
     </head>
     <body>
-        <fieldset>
-            <form method="post" action="#">
-                <label for="quant_">Quantidade de carros vendidos: </label>
-                <input type="number" id="quant_" name="quantidade"/>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </fieldset>
         <?php
-           $quant = $_POST['quantidade'];
-           $sal = 800;
-           $com = 300;
-           
-           $total = ($quant * $com) + $sal;
-           
-           echo 'O salário total é de R$: '.$total;
-           
+            $n1 = 11;
+            $n2 = 19;
+            $n3 = 7;
+            
+            $media = ($n1 + $n2 + $n3) / 3;
+            
+            echo 'A média dos números '.$n1.', ' .$n2.' e ' .$n3. ' é : '.$media;
+                   
         ?>
     </body>
 </html>
+
