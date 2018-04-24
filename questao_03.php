@@ -1,10 +1,21 @@
-
+<!DOCTYPE html>
+<html>
+    <head lang="pt-br">
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <fieldset>
+            <form method="post" action="#">
+                <label for="int_">Informe o salário:</label>
+                <input type="number" id="int_" name="int"/>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>    
         <?php
-            $impulsos = (254-90) * 0.09;
-            $chCel = 23 * 0.35;
-            
-            $tot = $impulsos + $chCel + 32;
-            
-            echo 'Valor da conta é de: '.$tot;
-                        
+            $int = $_POST['int'];
+            echo 'o valor absoluto é: '. abs($int);
         ?>
+    </body>
+</html>

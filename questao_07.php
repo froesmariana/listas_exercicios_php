@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
         <meta charset="UTF-8">
-        <title>Questão 7</title>
+        <title></title>
     </head>
     <body>
         <fieldset>
             <form method="post" action="#">
-                <label for="numInt_">Digite um número inteiro:</label>
-                <input type="number" id="numInt_" name="numInt"/>
+                <label for="numero_">Informe um número inteiro
+                <input type="number" id="numero_" name="numero"/>
+                </label>
             </form>
         </fieldset>
         <?php
-            $numInt = $_POST['numInt'];
-            $quad = $numInt * $numInt;
-            
-            echo 'O resultado do quadrado do valor digitado é: '.$quad;
+            $numero = $_POST['numero'];
+            $cont = 0;
+            for($x = 1;$x <= $numero;$x++){
+                if($numero % $x == 0)
+                    $cont++;
+            }
+            if($cont == 2)
+                echo 'primo';
+            else
+                echo 'não é número primo';
         ?>
     </body>
 </html>

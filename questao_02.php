@@ -1,9 +1,15 @@
-<?php
-    $a = "a";
-    $l = "l";
-    $u = "u";
-    $n = "n";
-    $o = "o";
-    $s = "s";
-    echo ($a. $l. $u. $n. $o. $s);        
-?>
+<!DOCTYPE html>
+<html>
+    <head lang="pt-br">
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php
+            $array = array(1, 7)
+            
+            
+            
+        ?>
+    </body>
+</html>

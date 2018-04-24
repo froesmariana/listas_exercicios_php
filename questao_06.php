@@ -1,35 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
         <meta charset="UTF-8">
-        <title>Questão 06</title>
+        <title></title>
     </head>
     <body>
         <fieldset>
             <form method="post" action="#">
-                <label for="a_">Digite o primeiro valor:</label>
-                <input type="number" id="a_" name="a"/>
-                
-                <label for="b_">Digite o segundo valor:</label>
-                <input type="number" id="b_" name="b"/>  
+                <label for="num_">Informe um numero:</label>
+                <input type="number" id="num_" name="num"/>
                 
                 <button type="submit">Enviar</button>
             </form>
         </fieldset>
-        
         <?php
-           $a = $_POST['a'];
-           $b = $_POST['b'];
-           
-           $adicao = ($a + $b);
-           $subtracao = ($a - $b);
-           $multip = ($a * $b);
-           $div = ($a / $b);
-           
-           echo 'A adição entre A e B é: '.$adicao;
-           echo '</br>A subtração entre A e B é: '.$subtracao;
-           echo '</br>A multiplicação entre A e B é: '.$multip;
-           echo '</br>A divisão entre A e B é: '.$div;
+            $num = $_POST['num'];
+            
+            if($num % 2 == 0){
+                echo 'par';
+            } else {
+                echo 'impar';
+            }
         ?>
     </body>
 </html>

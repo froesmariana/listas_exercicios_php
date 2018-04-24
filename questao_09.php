@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="pt-br">
         <meta charset="UTF-8">
-        <title>Questão 9</title>
+        <title></title>
     </head>
     <body>
         <fieldset>
             <form method="post" action="#">
-                <label for="n1_">Digite o primeiro número:</label>
-                <input name="n1" type="number" id="n1_"/>
+                <label for="int1_">Informe o numero 1:</label>
+                <input type="number" id="int1_" name="int1"/>
                 
-                <label for="n2_">Digite o segundo número:</label>
-                <input name="n2" type="number" id="n2_"/>
+                <label for="int2_">Informe o numero 2:</label>
+                <input type="number" id="int2_" name="int2"/>
+                
+                <label for="int3_">Informe o numero 3</label>
+                <input type="number" id="int3_" name="int3"/>
                 
                 <button type="submit">Enviar</button>
             </form>
-        </fieldset>
+        </fieldset>       
         <?php
-            $n1 = $_POST['n1'];
-            $n2 = $_POST['n2'];
+            $int1 = $_POST['int1'];
+            $int2 = $_POST['int2'];
+            $int3 = $_POST['int3'];
             
-            $div = $n1 / $n2;
-            
-            $quad = $n1 * $n1;
-            $cubo = $n2 * $n2 * $n2;
-            
-            echo 'A divisão entre '.$n1.' e '.$n2.' é: '.$div;
-            echo '</br>O quadrado do primeiro número é: '.$quad;
-            echo '</br>O cubo do segundo número é: '.$cubo;
+            $nums = array($int1, $int2, $int3);
+            asort($nums);
+                foreach ($nums as $v1 => $v2) {
+                    echo "</br>$v1 = $v2";
+                }
         ?>
     </body>
 </html>
